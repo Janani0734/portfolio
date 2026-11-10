@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Janani — AI & Full-Stack Developer</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { background: #0a0a0f; color: #e5e7eb; font-family: 'Inter', sans-serif; }
+  .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; transition: all 0.3s ease; }
+  .card:hover { transform: translateY(-5px); border-color: rgba(96,165,250,0.4); box-shadow: 0 10px 40px rgba(96,165,250,0.15); }
+  .btn { background: linear-gradient(90deg, #3b82f6, #8b5cf6); color: white; padding: 12px 24px; border-radius: 8px; font-weight: 600; transition: all 0.3s; }
+  .btn:hover { transform: scale(1.05); box-shadow: 0 5px 20px rgba(139,92,246,0.4); }
+  .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn 0.8s forwards; }
+  @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
+  .tag { background: rgba(96,165,250,0.1); color: #60a5fa; padding: 4px 12px; border-radius: 9999px; font-size: 0.8rem; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- Hero -->
+<section class="min-h-screen flex items-center justify-center px-6">
+  <div class="max-w-4xl text-center fade-in">
+    <p class="text-blue-400 mb-4 tracking-widest text-sm">AI & FULL-STACK DEVELOPER</p>
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">Building <span class="gradient-text">AI Safety</span> &<br>Compliance Platforms</h1>
+    <p class="text-gray-400 text-lg mb-8 max-w-2xl mx-auto">I build AI agent safety tools, RAG-based compliance auditors, and LLM evaluation workflows — turning cutting-edge AI into trustworthy, production-ready systems.</p>
+    <div class="flex gap-4 justify-center">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="https://github.com/Janani0734" class="btn" style="background:rgba(255,255,255,0.08)">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20 px-6 max-w-6xl mx-auto">
+  <h2 class="text-4xl font-bold mb-12 text-center">Featured <span class="gradient-text">Projects</span></h2>
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <!-- MCP-Guardrail -->
+    <div class="card p-8 fade-in">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-3xl">🛡️</span>
+        <h3 class="text-2xl font-bold">MCP-Guardrail</h3>
+      </div>
+      <p class="text-gray-400 mb-4">AI agent safety & governance platform using the Model Context Protocol (MCP). Intercepts high-risk tool calls from Claude Desktop, routes them into human-approval workflows, and maintains a tamper-evident audit trail.</p>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="tag">MCP</span><span class="tag">Claude Desktop</span><span class="tag">Gemini API</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span><span class="tag">Playwright</span>
+      </div>
+      <div class="flex gap-4">
+        <a href="https://github.com/Janani0734/mcp-guardrail" class="text-blue-400 hover:underline">GitHub →</a>
+        <a href="https://janani0734.github.io/mcp-guardrail/" class="text-purple-400 hover:underline">Live Demo →</a>
+      </div>
+    </div>
+
+    <!-- DPDP-Shield -->
+    <div class="card p-8 fade-in" style="animation-delay:0.2s">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-3xl">🔐</span>
+        <h3 class="text-2xl font-bold">DPDP-Shield</h3>
+      </div>
+      <p class="text-gray-400 mb-4">RAG-based privacy compliance auditor for India's DPDP Act 2023. Cross-references privacy policies against DPDP Rules, flags violations (consent, retention, breach clauses), and generates fix suggestions with citations.</p>
+      <div class="flex flex-wrap gap-2 mb-6">
+        <span class="tag">RAG</span><span class="tag">LangChain</span><span class="tag">ChromaDB</span><span class="tag">Gemini API</span><span class="tag">Streamlit</span><span class="tag">FastAPI</span>
+      </div>
+      <div class="flex gap-4">
+        <a href="https://github.com/Janani0734/dpdp-shield" class="text-blue-400 hover:underline">GitHub →</a>
+        <a href="#" class="text-purple-400 hover:underline">Live Demo →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Skills -->
+<section class="py-20 px-6 max-w-4xl mx-auto">
+  <h2 class="text-4xl font-bold mb-12 text-center">Tech <span class="gradient-text">Stack</span></h2>
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+    <div class="card p-4">Python</div>
+    <div class="card p-4">JavaScript</div>
+    <div class="card p-4">Node.js</div>
+    <div class="card p-4">React</div>
+    <div class="card p-4">LangChain</div>
+    <div class="card p-4">ChromaDB</div>
+    <div class="card p-4">Gemini API</div>
+    <div class="card p-4">MCP</div>
+    <div class="card p-4">FastAPI</div>
+    <div class="card p-4">PostgreSQL</div>
+    <div class="card p-4">Playwright</div>
+    <div class="card p-4">GitHub Actions</div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-20 px-6 text-center">
+  <h2 class="text-4xl font-bold mb-6">Let's <span class="gradient-text">Connect</span></h2>
+  <p class="text-gray-400 mb-8">Open to AI internships, full-stack roles, and collaborations.</p>
+  <a href="mailto:your@email.com" class="btn">Get in Touch</a>
+</section>
+
+<footer class="py-8 text-center text-gray-500 text-sm">© 2026 Janani. Built with passion for AI safety.</footer>
+
+</body>
+</html>
